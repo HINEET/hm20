@@ -32,7 +32,52 @@
 			}
 			#round{ border-image: url("media/images.png") 30 round;
 			}
-			
+
+			div {
+				display: inline-block;
+				position:absolute ; /* 절대 배치 */
+				top: 10px;
+				left: 10px;
+			}
+			div > p {
+				display: inline-block; /* div의 자식 p */
+				position:absolute ; /* 절대 배치 */
+				height: 0.1px;
+				width: 0.1px;
+				background: #d42a2a;
+			}
+			#in1
+			{
+				position: absolute;
+				top: 90px;
+				left: 190px;
+				height: 80px;
+				width: 80px;
+			}
+			#in2
+			{
+				position: absolute;
+				top: 280px;
+				left: 200px;
+				height: 80px;
+				width: 80px;
+			}
+			#in3
+			{
+				position: absolute;
+				top: 300px;
+				left: 50px;
+				height: 80px;
+				width: 80px;
+			}
+			#in4
+			{
+				position: absolute;
+				top: 380px;
+				left: 350px;
+				height: 80px;
+				width: 80px;
+			}
 
 
 			
@@ -44,11 +89,13 @@
 		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
 		<h3>Merry Christmas!</h3>
 		<hr>
+		
 		<p id="round">
 		<img src="media/christmastree.png"
 		width="400" height="400"
 		alt="크리스마스 트리" >
-		<audio src="media/Jingle Bell(Flut&Guitar).mp3" controls autoplay loop></audio>
+		
+		<audio src="media/Jingle Bell(Flut&Guitar).mp3" controls loop></audio>
 		</p>
 		
 		
@@ -56,7 +103,45 @@
 			HM20, 장태호
 		</div>
 		
+		<div>
 		
+		
+		
+		<p style="left: 190px;top: 120px;" >
+			M
+		</p>
+		<p style="left: 150px;top: 150px;">
+			E
+		</p>
+		<p style="left: 220px;top: 200px;">
+			R
+		</p>
+		<p style="left:260px; top:230px">
+			R
+		</p>
+		<p style="left:130px; top:260px">
+			Y
+		</p>
+		<p style="left:100px; top:350px">
+			X
+		</p>
+		<p style="left:150px; top:350px">
+			-
+		</p>
+		<p style="left:200px; top:350px">
+			M
+		</p>
+		<p style="left:250px; top:350px">
+			A
+		</p>
+		<p style="left:310px; top:350px">
+			S
+		</p>
+		<img src="media/tree1.PNG" id="in1">
+		<img src="media/tree2.PNG" id="in2">
+		<img src="media/tree3.PNG" id="in3">
+		<img src="media/tree4.PNG" id="in4">
+		</div>
 
 
 	</body>
