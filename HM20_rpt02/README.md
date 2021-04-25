@@ -6,13 +6,13 @@
 4. 동호회 모집에 form.html을 추가하였다. form.html에 webform과 fieldset tag를 이용하여 표시 하였다.<br>동아리 회원모집에도 Semantic tag를 이용하였다.<br>우측 위쪽에 회원가입 창을 출력하였고 클릭하면 form.html 로 넘어간다.<br>목차 부분에 글자를 선택하면 해당 글의 위치로 바로 이동할수있게 글자에 하이퍼 링크를 걸어놨다.<br>BEST TOP3 와 같이 페이지가 밑으로 내려갔을때 위쪽으로 한번에 올라갈수있는 버튼을 이미지를 통해 만들었다.<br>footer에 담당자를 누르면 hm20_info.html롤 이동한다.
 5. x-mas파티 초대장을 추가하였다.<br>해당 크리스마스 카드를 position으로 중앙에 위치하도록 하였다.
 # 추가 된 html 파일
--hm20_rpt02.html
--hm20_best3_music.html
--hm20_best3_music2.html
--hm20_best3_youtube.html
--hm20_best3_youtube2.html
--hm20_card.html
--hm20_day.html
--hm20_info.html
--hm20_party.html
--hm20_form.html
+- hm20_rpt02.html
+- hm20_best3_music.html 
+- hm20_best3_music2.html
+- hm20_best3_youtube.html
+- hm20_best3_youtube2.html
+- hm20_card.html
+- hm20_day.html
+- hm20_info.html
+- hm20_party.html
+- hm20_form.html
