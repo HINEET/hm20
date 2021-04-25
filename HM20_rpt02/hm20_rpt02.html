@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>hm20_rpt02</title>
+ <style>
+     *{margin: 0px; padding: 0px;}
+ul{list-style: none;} /* 리스트 앞에 . 같은거 제거*/
+a{text-decoration: none;} /* 링크에 밑줄 같은거 제거*/
+
+html,body{
+    margin:0; padding:0; height: 100%;
+}
+ 
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%; /*메인 이미지의 너비 사이즈와 같음*/
+    height: 95px;
+    background-color: #2d3a4b;
+ 
+    /* header 안에 요소들을 모두 absolute 포지션으로 배치할 것이라서 */
+    /* absolute 요소가 header의 좌상단을 기준으로 하려면 */
+    /* header의 position이 relative 여야만 함 */
+    
+}
+
+ 
+/* 제목영역안에 있는 메인 로고 이미지 위치 지정 */
+
+ 
+/* 제목영역안에 오른쪽 상단에 top_menu 배치 */
+#top_menu{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: white;
+}
+ 
+/* top_menu a의 글시 하얀색으로 */
+#top_menu a{color: white;}
+ 
+/* 헤더 영역안에 네비게이션 메뉴 배치 */
+nav{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    font-size: 16px;
+}
+ 
+nav li{
+    display: inline;
+    margin-left: 30px;
+}
+ nav li :hover{
+    transform: scale(2,2);
+}
+nav li a{color: white;}
+
+#menubar ul li a {
+				color: white;
+				text-decoration:none ; 
+			}
+#menubar ul li a:hover {
+				color: violet;
+                font-size: 23px; 
+			}
+
+
+
+
+article
+{
+    position: fixed;
+    top: 90px;
+    bottom: 100px;
+    right: 254px;
+    left: 0px;
+    width: 89.9%;
+    height: 67%;
+    background-color: white;
+}
+ 
+
+
+aside{
+    position: fixed;
+    top: 90px;
+    bottom: 20px;
+    right:0px;
+    width: 10%; 
+    height: 1200px; 
+    background: #2d3a4b; 
+    float: right;
+    color: white;
+    text-align: center;
+    line-height: 450px;
+    
+}
+
+/* footer 영역 */
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%; /*헤더와 같은 사이즈*/
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #2d3a4b;
+}
+
+
+
+div#logo{
+    position: absolute;
+    top: 6px;
+    left: 180px;
+    font-size: 80px;
+    color: white;
+    
+}
+div#logo:hover{
+    transform: rotate(20deg);
+}
+
+
+#banner
+{
+    position: fixed;
+    bottom: 100px;
+    width: 90%;
+    height: 100px;
+    background-color: skyblue;
+}
+ 
+/* 제목영역안에 오른쪽 상단에 top_menu 배치 */
+#top_menu{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: white;
+}
+ 
+/* top_menu a의 글시 하얀색으로 */
+#top_menu a{color: white;}
+
+#text
+{
+    position: absolute;
+    right: 200px;
+    color: white;
+    
+}
+
+
+ </style>
+</head>
+
+
+
+<body>
+    
+    <div>
+ 
+        <header>
+            <div id="logo">
+                WHO AM I
+            </div>
+ 
+            <div id="top_menu">
+                <a href="hm20_rpt02.html">HOME</a> | 
+                <a href="form.html" target="right">LOGIN</a> 
+            </div>
+ 
+            <nav id="menubar">
+                <ul>
+                    <li id="lia"><a href="hm20_info.html" target="right">My Info</a></li>
+                    <li><a href="hm20_day.html" target="right">MY Daliy Life</a></li>
+                    <li><a href="hm30_best3_youtube2.html" target="right">Best Youtube Top 3</a></li>
+                    <li><a href="hm20_best3_music2.html" target="right">Best Music Top 3</a></li>
+                    <li><a href="hm20_party.html" target="right">동호회 모집</a></li>
+                    <li><a href="hm20_card.html" target="right">X-MAS파티 초대장</a></li>
+                    <li><a href="https://github.com/redwoods/html5" target="_blank">HTML5 강의홈피</a></li>
+                </ul>
+            </nav>
+ 
+        </header>
+
+        <aside>
+            <ul>
+            <li><a href="hm20_card.html" target="right"><img src="/media/invite.png" width="100%" height="900px"></a></li>
+            </ul>
+        
+        </aside>
+ 
+        <article>
+            
+                <iframe src="hm20_info.html" name="right" width="100%" height="100%" ></iframe>
+	
+        </article>
+ 
+        <footer>
+            <ul id="banner">
+                <li><a href="hm20_party.html" target="right"><img src="/media/club.png" width="100%" height="100px"></a></li>
+            </ul>
+            
+                
+                <div>
+                    <p id="text">
+                        <br>학번 : 20182576<br>     
+                        이메일 : xogh613@naver.com<br>
+                        이름 : 장태호    
+                        
+                    </p>
+                </div>
+        </footer>
+ 
+    </div>
+</body>
+</html>

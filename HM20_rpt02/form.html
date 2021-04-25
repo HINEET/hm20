@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm20 : 폼 입력 그룹으로 묶기 - fieldset</title>
+    <style>
+        #place
+        {
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        
+        }
+        #place2
+        {
+        position: fixed;
+        top: 130px;
+        left: 300px;
+        width: 80%;
+        height: 80%;
+        
+        }
+
+
+    </style>
+    <script></script>
+</head>
+
+<body>
+    
+    <div id="place2">
+        <img src="media/welcome.png" width="80%" height="80%">
+        </div>
+    <h3>회원 정보를 입력해주세요.</h3>
+    <hr>
+    <form id="place">
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일 : <input type="email"><br>
+            홈페이지 : <input type="url"><br> 
+            전화번호 : <input type="tel">
+            <input type="submit">
+        </fieldset>
+        <small>질문 : Tel. 010-123-4567</small>
+    </form>
+
+</body>
+
+</html>
