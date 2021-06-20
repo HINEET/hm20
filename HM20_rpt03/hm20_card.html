@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm20 : CSS3 advanced</title>
+		<style>
+			p{
+				width: 400px;
+				height: 450px;
+				padding: 10px;
+				border: 20px solid red ;
+				
+			}
+			
+			#fixed {
+				position: fixed;
+				top: 480px;
+				left: 550px;
+				width: 110px;
+				padding: 5px;
+				background: yellow;
+				color: black;
+			}
+			#round{ border-image: url("media/images.png") 30 round;
+			}
+
+			div {
+				display: inline-block;
+				position:absolute ; /* 절대 배치 */
+				top: 10px;
+				left: 10px;
+				
+			}
+			div > p {
+				display: inline-block; /* div의 자식 p */
+				position:absolute ; /* 절대 배치 */
+				height: 10px;
+				width: 10px;
+				background: green;
+			}
+			#in1
+			{
+				position: absolute;
+				top: 90px;
+				left: 190px;
+				height: 80px;
+				width: 80px;
+			}
+			#in2
+			{
+				position: absolute;
+				top: 280px;
+				left: 200px;
+				height: 80px;
+				width: 80px;
+			}
+			#in3
+			{
+				position: absolute;
+				top: 300px;
+				left: 50px;
+				height: 80px;
+				width: 80px;
+			}
+			#in4
+			{
+				position: absolute;
+				top: 380px;
+				left: 350px;
+				height: 80px;
+				width: 80px;
+			}
+			#transform:hover
+			{
+				transform: scale(3,3);
+			}
+			body{
+				position: absolute;
+				top: -2%;
+				left: 35%;
+				
+			}
+			
+
+			
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>Merry Christmas!</h3>
+		<hr>
+		
+		<p id="round">
+		<img src="media/christmastree.png"
+		width="400" height="400"
+		alt="크리스마스 트리" >
+		
+		<audio src="media/Jingle Bell(Flut&Guitar).mp3" controls loop></audio>
+		</p>
+		
+		
+		<div id="fixed">
+			HM20, 장태호
+		</div>
+		
+		<div>
+		
+		
+		
+		<p id="transform" style="left: 190px;top: 120px;" >
+			M
+		</p>
+		<p id="transform" style="left: 150px;top: 150px;">
+			E
+		</p>
+		<p id="transform" style="left: 220px;top: 200px;">
+			R
+		</p>
+		<p id="transform" style="left:260px; top:230px">
+			R
+		</p>
+		<p id="transform" style="left:130px; top:260px">
+			Y
+		</p>
+		<p id="transform" style="left:100px; top:350px">
+			X
+		</p>
+		<p id="transform" style="left:150px; top:350px">
+			-
+		</p>
+		<p id="transform" style="left:200px; top:350px">
+			M
+		</p>
+		<p id="transform" style="left:250px; top:350px">
+			A
+		</p>
+		<p id="transform" style="left:310px; top:350px">
+			S
+		</p>
+		<img src="media/tree1.PNG" id="in1">
+		<img src="media/tree2.PNG" id="in2">
+		<img src="media/tree3.PNG" id="in3">
+		<img src="media/tree4.PNG" id="in4">
+		</div>
+
+
+	</body>
+
+</html>
+

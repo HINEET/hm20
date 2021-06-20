@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm20_rpt03</title>
+    <style>
+
+        html,
+        body {
+            background-color: #b1ec52;
+            width: 100%;
+			height: 100%;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        iframe{
+            border: 0;
+        }
+        a{
+			text-decoration: none;
+		}
+
+        .header {
+            text-align: center;
+            padding-top: 1px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8%;
+            background: #b1ec52;
+        }
+
+        .nav {
+            width: 25%;
+            height: 100%;
+            float: left;
+            background: #b1ec52;
+        }
+
+        .section {
+            width: 50%;
+            height: 100%;
+            float: left;
+            background: #b1ec52;
+        }
+        .iframebox{
+            position: relative;
+            width: 100%;
+            padding-bottom: 82%;
+        }
+        .iframebox iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .aside {
+            
+            width: 25%;
+            height: 100%;
+            float: right;
+            background: #b1ec52;
+           
+        }
+
+        .footer {
+            
+            width: 100%;
+            height: 8%;
+            clear: both;
+            background: #b1ec52;
+            float: bottom; 
+            
+        }
+        #left{
+			text-align: center;
+			height: 35px;
+            background: #b1ec52;
+        }
+        #left ul{
+            margin:0;
+            padding: 0;
+            width:100%;
+        }
+        #left ul li{
+            display: inline;
+            list-style-type:none;
+            padding:0px 15px;
+        }
+        #left ul li a{
+			font-size: 14pt;
+            color:whitesmoke;
+            text-decoration:none
+        }
+        #left ul li a:hover{
+            color: lawngreen;
+        }
+        .Effect {
+			color: whitesmoke;
+			text-shadow: 2px 2px 2px black, 0 0 25px pink, 0 0 5px springgreen;
+		}
+        .Effect2 {
+			color: rgb(195, 134, 230);
+			text-shadow: 2px 2px 4px white, 0 0 25px skyblue, 0 0 10px white;
+		}
+        .Effect3 {
+			color: rgb(236, 149, 222);
+			text-shadow: 2px 2px 4px white, 0 0 25px skyblue, 0 0 10px white;
+		}
+        .Effect4 {
+			color: white;
+			text-shadow: 2px 2px 4px #7dd6d6, 0 0 25px #7dd6d6, 0 0 10px #7dd6d6;
+		}
+		.blurText{
+			text-shadow: 3px 3px 5px black;
+		}
+        #hm20{
+			transform: translate(35px, -14px);
+        }
+        input{
+            color: green;
+        }
+        input:focus{
+            width: 180px;
+        }
+        #clock{
+            position: absolute;
+            top: 0px;
+            right: 5px;
+        }
+
+        
+
+
+    </style>
+    <script>
+        function change(obj,size,color){
+            obj.style.color = color;
+            obj.style.fontSize = size;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    
+    <header class="header">
+        <h1><a class="Effect" href="hm20_info.html" target="myframe">[ 나의 홈페이지 ] </a></h1>
+        <h3 id="clock">
+        <iframe src="hm20_clock.html" style="margin-top: -6px; width: 300px;" height="150px"></iframe>
+        </h3>
+    </header>
+    <nav id="left">
+        <ul>
+            <li><a class="blurText" href="hm20_info.html" target="myframe">Who is I?</a></li>
+            <li><a class="blurText" href="hm20_day.html" target="myframe">Hm20 Day</a></li>
+            <li><a class="blurText" href="hm20_best3_youtube.html" target="myframe">youtube best 3</a></li>
+            <li><a class="blurText" class="blurText" href="hm20_best3_music.html" target="myframe">music best 3</a></li>
+            <li><a class="blurText" href="hm20_party.html" target="myframe">동호회 모집 안내</a></li>
+            <li><a class="blurText" href="hm20_card.html" target="myframe">X-Mas card</a></li>	
+            <li><a class="blurText" href="hm20_calculator.html" target="myframe">계산기</a></li>	
+            <li><a class="blurText" href="hm20_coding.html" target="myframe">HTML 코딩</a></li>										
+        </ul>
+</nav>
+    <nav class="nav">
+        <p class="Effect2" style="font-size: 17pt; text-align: center;">즐겨찾는 사이트</p>
+        <a class="Effect3" href="https://github.com/HINEET" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>① HM20's Github</strong></a><br><br>
+        <a class="Effect3" href="https://github.com/redwoods/html5" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>② HTML5 강의자료 홈페이지</strong></a><br><br>
+        <a class="Effect3" href="https://www.youtube.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>③ Youtube</strong></a><br><br>
+        <a class="Effect3" href="https://naver.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>④ NAVER</strong></a><br><br>
+        <a class="Effect3" href="https://weather.naver.com/today/03250118" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑤ 날씨</strong></a><br><br>
+
+        <iframe src="hm20_image2.html" style="margin-top: -6px; width: 479px;" height="500px"></iframe>
+    </nav>
+    <section class="section">
+        <article>	
+            <div class="iframebox">
+            <iframe src="hm20_info.html" name="myframe" allowfullscreen> 
+            </iframe>
+            </div>		
+        </article>
+    </section>
+    <aside class="aside">
+        <div style=" background-color: #b1ec52; padding: 1px; width:378px">
+            <p class="Effect4" style="text-align: center;"><strong>Login</strong></p>
+        </div>
+        <hr style="margin-top: -1px;">
+        <form>
+            <a class="" style="margin-left: 21px;"><strong> ID :</strong> </a> <input type="text" size="15" value=""><br>
+            <a style="margin-left: 12px;"><strong> PW :</strong> </a> <input type="password" size="15" value="">
+            <input style="color: black; margin-left: 5px;" type="submit" value="로그인" size=10 /><br>
+            <input style="margin-left: 12px;" type="checkbox" value="로그인" /><strong>자동 로그인</strong>
+            <hr>
+      
+            <iframe src="hm20_image5.html" style="margin-top: -6px; width: 390px;" height="626px">
+                
+            </iframe>
+        </form>
+    
+    </aside>
+    <footer class="footer">
+        <p id="hm20" class="blurText" style="font-size: 20px; text-align: left; font-style: italic; color: whitesmoke;" onmouseover="change(this,'30px','orange')" onmouseout="change(this,'20px','whitesmoke')">
+            HM20<br>20182576 장태호
+        </p>
+    </footer>
+
+
+
+</body>
+
+</html>

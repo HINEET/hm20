@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <style>
+        .Effect {
+			color: white;
+			text-shadow: 2px 2px 4px #d69df0, 0 0 25px #d69df0, 0 0 10px #d69df0;
+		}
+    </style>
+     <title>
+
+    </title>
+    <script 
+        type="text/javascript"> 
+        var imgArray=new Array(); 
+        imgArray[0]="media/성산일출봉.png";
+        imgArray[1]="media/광안대교.png"; 
+        imgArray[2]="media/경화역.png"; 
+        imgArray[3]="media/신선대공룡능선.png"; 
+        imgArray[4]="media/울릉도 해안도로.png"; 
+        
+        function showImage(){
+            var imgNum=Math.round(Math.random()*3); 
+            var objImg=document.getElementById("introimg"); 
+            objImg.src=imgArray[imgNum]; setTimeout(showImage,5000); }
+    </script> 
+</head> 
+
+<body onload="showImage()"> 
+    <h3 class="Effect">
+        <한국 절경>
+
+    </h3>
+    <img id="introimg" border="0"> 
+</body> 
+</html>

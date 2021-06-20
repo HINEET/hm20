@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm20 : best youtube 3</title>
+    <style>
+        h4{
+            color: blue;
+            text-align: center;
+        }
+        select{
+            margin-left: 25%;
+        }
+
+            .multiEffect {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+			}
+    </style>
+    <script>
+        function of(){
+            var ret = confirm ("해당 내용으로 넘어가시겠습니까?");
+			return ret;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h1 class="multiEffect" style="text-align: center;">Best 3 Movie</h1>
+    <h4>( 원하는 유튜브 채널을 고르십시오.)</h4>
+    <!-- <hr> -->
+    <form>
+        <select style="width: 500px;" onchange="if(this.value) location.href=(this.value);" name="movie">
+            <option value="hm20_best3_youtube.html">youtube 채널을 선택하세요.</option>
+            <option value="hm20_youtube_wooptv.html" >WOOPTV </option>
+            <option value="hm20_youtube_chiwo.html">취미로 요리하는 남자</option>
+            <option value="hm20_youtube_yendu.html">연두의 일상생활</option>
+
+
+        </select>
+    </form>
+<br><br>
+        <a href="hm20_youtube_wooptv.html" ><img src="media/woop.png" onclick="return of()" width="300" height="150" ></a>
+        <a href="hm20_youtube_chiwo.html"><img src="media/cookman.png" onclick="return of()" width="300" height="150"></a>
+        <a href="hm20_youtube_yendu.html"><img src="media/yeandu.png" onclick="return of()" width="300" height="150"></a>
+
+
+</body>
+
+</html>

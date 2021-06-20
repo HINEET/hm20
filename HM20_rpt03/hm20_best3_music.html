@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm20 : best 3 music</title>
+    <style>
+        h4{
+            color: blue;
+            text-align: center;
+        }
+        select{
+            margin-left: 25%;
+        }
+
+            .multiEffect {
+				color: white;
+				text-shadow: 2px 2px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
+			}
+    </style>
+    <script>
+        function of(){
+            var ret = confirm ("해당 내용으로 넘어가시겠습니까?");
+			return ret;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h1 class="multiEffect" style="text-align: center;">Best music 3</h1>
+    <h4>(노래를 선택하여 주십시오. )</h4>
+    <!-- <hr> -->
+    <form>
+        <select style="width: 500px;" onchange="if(this.value) location.href=(this.value);" name="movie">
+            <option value="hm20_best3_music.html">음악을 선택하세요.</option>
+            <option value="hm20_music_dinggul.html">뒹굴뒹굴</option>
+            <option value="hm20_music_celebrity.html">Celebrity</option>
+            <option value="hm20_music_gudel.html">그댈마주하는건 힘들어</option>
+
+
+        </select>
+    </form>
+<br><br>
+        <a href="hm20_music_dinggul.html"  ><img src="media/sungwoojunga.png" onclick="return of()" width="300" height="150" ></a>
+        <a href="hm20_music_celebrity.html"><img src="media/iu.png" onclick="return of()" width="300" height="150"></a>
+        <a href="hm20_music_gudel.html"><img src="media/busker.png" onclick="return of()" width="300" height="150"></a>
+
+
+</body>
+
+</html>
